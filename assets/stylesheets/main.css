@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #f8f9fa;
+}
+
+body, h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #121939;
+}
+
+.space-between-containers{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Style headings*/
+
+    h2, h3, h4, h5{
+        font-family: 'Work Sans', sans-serif;
+        color: #121939;
+    }
+
+    .format_heading2{
+        font-size: 27px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        margin-bottom: 10px;
+    }
+
+/*Style headings*/
+
+
+/* Section Pricez */
+
+    .award-icon{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .card{
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card-title{
+        margin-top: 0.5rem;
+    }
+
+    .first-place, .second-place, .third-place{
+        font-size: 2.1rem;
+    }
+
+    .first-place{
+        color: #efb810;
+    }
+
+    .second-place{
+        color: #BEBEBE;	
+    }
+
+    .third-place{
+        color: #B87333;	
+    }
+
+    .title-prize{
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+
+/* Section Pricez */
+
+
+/* Section Date of event */
+
+    .countdown, #fecha-de-inicio-evento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #countdown-wrapper{
+        background: #CADC31;
+    }
+
+/* Section Date of event */
+
+
+/*Section Slider Partners*/
+
+    .owl-carousel .owl-item img {
+        width: 200px!important;
+    }
+
+/*Section Slider Partners*/
+
+/* Lists */
+
+    ul#lists-bullet li::marker{
+        color: #CADC31!important;
+    }
+
+/* Lists */
+
+
+/* Navbar */
+
+    #navbar-main .nav-link:hover, #navbar-main .nav-link a:active{
+        color:#CADC31;
+    }
+
+    #navbar-main .nav-link{
+        color: #fff;
+    }
+
+    .nav-main{
+        background: #181818!important;
+    }
+
+    #toggler-button{
+        border: 1px solid #CADC31;
+        background: #CADC31;
+    }
+
+    .format_text, #navbar-main{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 23px;
+    }
+
+/* Navbar */
+
+
+/* Register */
+
+    #submit-button{
+        font-family: 'Montserrat', sans-serif;;
+        background: #CADC31;
+        border: 0;
+        color: #1B1F3B;
+        border-radius: 25px;;
+    }
+
+    #submit-button:hover{
+        background: #1B1F3B;
+        color: #fff;
+    }
+
+    #register_success_wrap{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .card_wrap{
+        background: #CADC31;
+        border: 0;
+        text-align: center;
+    }
+
+/* Register */

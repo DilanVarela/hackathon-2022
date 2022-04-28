@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxis Libres Hackathon 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-main">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://www.taxislibres.com.co/public/imagesNew/logo_escritorio.png" alt="imageLogo"></a>
+          <button class="navbar-toggler" id="toggler-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#acerca-del-evento">¿Que es?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#objetivo-del-evento">Objetivo del evento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#duracion-del-evento">Duracion del evento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#premios-del-evento">Premios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#patrocinadores-del-evento">Patrocinadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#registro-al-evento">Registro</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container space-between-containers" id="acerca-del-evento">
+        <div>
+            <h2 class="format_heading2">
+                ¿Qué es la Hackathon de Taxis Libres?
+            </h2>
+            <p class="format_text">
+                Es una maratón de desarrollo virtual en la que durante 3 dias diferentes equipos de profesionales buscaran construir soluciones a los retos propuestos de movilidad en Colombia haciendo uso de las últimas tecnologías, productos, herramientas y servicios de Taxis Libres y de nuestros patrocinadores y aliados.
+            </p>
+        </div>
+    </div>
+    </br class="clearfix">
+    <div class="container space-between-containers" id="objetivo-del-evento">
+        <div>
+            <h2 class="format_heading2">
+                ¿Cuál es el objetivo de la Hackathon de Taxis Libres?
+            </h2>
+            <p class="format_text">
+                Buscamos generar espacios creativos para que los colombianos puedan desarrollar sus ideas y demostrar su talento resolviendo uno de estos cinco aspectos claves en temas de movilidad, tecnología y sostenibilidad:
+            </p>
+            <ul id="lists-bullet">
+                <li class="format_text">
+                    Transporte aliado para la seguridad en las ciudades.
+                </li>
+                <li class="format_text">
+                    Soluciones que incrementen las utilidades a los conductores y propietarios.
+                </li>
+                <li class="format_text">
+                    Soluciones donde los taxis aporten a la optimización de la logística en ciudades inteligentes.
+                </li>
+                <li class="format_text">
+                    Alternativas para aportar a la conservación del medio ambiente.
+                </li>
+                <li class="format_text">
+                    Soluciones que mejoren las experiencias para usuarios y conductores por medio de analítica predictiva.
+                </li>
+            </ul>
+        </div>
+    </div>
+    </br class="clearfix">
+    <div class="container space-between-containers" id="duracion-del-evento">
+        <h2 class="format_heading2">
+            ¿Cuándo se realizará?
+        </h2>
+        <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" id="countdown-wrapper">
+            <p id="fecha-de-inicio-evento" class="format_text">Este evento virtual se llevará a cabo desde el dia 10 al 12 de junio de 2022 e inicia en:</p>
+            <div id="inicio-del-evento" class="countdown"></div>
+        </div>
+        <div class="d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
+            <p id="fecha-de-inicio-evento" class="format_text">Este evento virtual se llevará a cabo desde el dia 10 al 12 de junio de 2022</p>
+        </div>
+    </div>
+    </br class="clearfix">
+    <div class="container space-between-containers" id="premios-del-evento">
+        <div>
+            <h2 class="format_heading2">
+                ¿Cuáles serán los beneficios para los equipos ganadores?
+            </h2>
+            <p class="format_text">
+                Todos los participantes recibirán un certificado de participación y podrán acceder a ofertas de trabajo ofrecidas por la compañía.
+            </p>
+            <p class="format_text">
+                Entre todos los participantes seran seleccionados 3 finalistas y los mejores talentos individuales. El monto total de los beneficios esta considerado en $25.000 USD. 
+            </p>
+        </div>
+        <div class="container price_container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-title">
+                        <h4 class="award-icon first-place"><i class="fas fa-award"></i></h4>
+                        <h5 class="card-title title-prize">Primer lugar</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul id="lists-bullet">
+                          <li><p class="card-text format_text">$5.000.000 COP.</p></li>
+                          <li><p class="card-text format_text">$10.000 USD IBM Cloud.</p></li>
+                          <li><p class="card-text format_text">Un teléfono Huawei.</p></li>
+                          <li><p class="card-text format_text">50 viajes en taxi ($15.000 COP c/u).</p></li>
+                          <li><p class="card-text format_text">1 año de licencia Platzi.</p></li>
+                          <li><p class="card-text format_text">6 meses de oficinas.</p></li>
+                        </ul>
+                    </div>  
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-title">
+                        <h4 class="award-icon second-place"><i class="fas fa-award"></i></h4>
+                        <h5 class="card-title title-prize">Segundo lugar</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul id="lists-bullet">
+                            <li><p class="card-text format_text">$3.000.000 COP.</p></li>
+                            <li><p class="card-text format_text">Un teléfono Huawei.</p></li>
+                            <li><p class="card-text format_text">20 viajes en taxi ($15.000 COP c/u).</p></li>
+                            <li><p class="card-text format_text">6 meses de licencia para Platzi.</p></li>
+                            <li><p class="card-text format_text">3 meses de oficinas</p></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-title">
+                        <h4 class="award-icon third-place"><i class="fas fa-award"></i></h4>
+                        <h5 class="card-title title-prize">Tercer lugar</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul id="lists-bullet">
+                            <li><p class="card-text format_text">$2.000.000 COP</p></li>
+                            <li><p class="card-text format_text">Un teléfono Huawei.</p></li>
+                            <li><p class="card-text format_text">10 viajes en taxi ($15.000 COP c/u).</p></li>
+                            <li><p class="card-text format_text">6 meses de licencia para Platzi.</p></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br class="clearfix">
+    <div class="container space-between-containers" id="patrocinadores-del-evento">
+        <h2 class="format_heading2">
+            Nuestros Patrocinadores
+        </h2>
+        <div class="owl-carousel owl-theme" id="slider-patrocinadores">
+            <div class="item"><img src="assets/images/ibm-logo.png" alt="IBM Logo" ></div>
+            <div class="item"><img src="assets/images/huawei-logo.png" alt="Huawei Logo" ></div>
+            <div class="item"><img src="assets/images/uniandes-logo.png" alt="Universidad de los Andes Logo" ></div>
+            <div class="item"><img src="assets/images/unirosario-logo.png" alt="Universidad del Rosario Logo" ></div>
+            <div class="item"><img src="assets/images/efecty-logo.png" alt="Efecty Logo" ></div>
+            <div class="item"><img src="assets/images/platzi-logo.png" alt="Platzi Logo" ></div>
+            <div class="item"><img src="assets/images/sikuani-logo.png" alt="Sikuani Logo" ></div>
+        </div>
+    </div>
+    </br class="clearfix">
+    <div class="container space-between-containers" id="registro-al-evento">
+        <h2 class="format_heading2">
+            Registro
+        </h2>
+        <div class="container mt-3" id="register">
+            <form action="assets/php/register.php" method="post" id="register-to-hackathon" class="needs-validation" novalidate>
+                <div class="mb-3 mt-3">
+                    <label for="full_name" class="form-label">Nombre:</label>
+                    <div class="col-9 col-sm-7 col-md-7 col-lg-6">
+                        <input type="text" class="form-control" id="full_name" placeholder="Nombre completo" name="full_name" onchange="validateInputs(this.id, this.value)" required>
+                        <div class="invalid-feedback" id="error-full_name">Ingrese datos en este campo</div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <div class="col-9 col-sm-7 col-md-7 col-lg-6">
+                        <input type="email" class="form-control" id="email" placeholder="Correo electronico" name="email" onchange="validateInputs(this.id, this.value)" required>
+                        <div class="invalid-feedback" id="error-email">Ingrese datos en este campo</div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="country_residence" class="form-label">Pais de residencia:</label>
+                    <div class="col-9 col-sm-7 col-md-7 col-lg-6">
+                        <select type="text" class="form-control is-invalid" id="country_residence"  name="country_residence" onchange="validateInputs(this.id, this.value)" required>
+                            <option value="select" selected>Selecciona tu pais de residencia</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bonaire">Bonaire</option>
+                            <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Canary Islands">Canary Islands</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Channel Islands">Channel Islands</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos Island">Cocos Island</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote DIvoire">Cote DIvoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curaco">Curacao</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="East Timor">East Timor</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands">Falkland Islands</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Ter">French Southern Ter</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Great Britain">Great Britain</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="India">India</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea North">Korea North</option>
+                            <option value="Korea Sout">Korea South</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macau">Macau</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Midway Islands">Midway Islands</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Nambia">Nambia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherland Antilles">Netherland Antilles</option>
+                            <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                            <option value="Nevis">Nevis</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau Island">Palau Island</option>
+                            <option value="Palestine">Palestine</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Phillipines">Philippines</option>
+                            <option value="Pitcairn Island">Pitcairn Island</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Republic of Montenegro">Republic of Montenegro</option>
+                            <option value="Republic of Serbia">Republic of Serbia</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="St Barthelemy">St Barthelemy</option>
+                            <option value="St Eustatius">St Eustatius</option>
+                            <option value="St Helena">St Helena</option>
+                            <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                            <option value="St Lucia">St Lucia</option>
+                            <option value="St Maarten">St Maarten</option>
+                            <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                            <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                            <option value="Saipan">Saipan</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="Samoa American">Samoa American</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tahiti">Tahiti</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Erimates">United Arab Emirates</option>
+                            <option value="United States of America">United States of America</option>
+                            <option value="Uraguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Vatican City State">Vatican City State</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                            <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                            <option value="Wake Island">Wake Island</option>
+                            <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zaire">Zaire</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                        <div class="invalid-feedback" id="error-country_residence">Debe seleccionar un valor valido</div>
+                    </div>
+                </div>
+            <button type="submit" id="submit-button" class="btn btn-primary">Registrarse</button>
+            </form>
+        </div>
+        <div class="container mt-3" id="register_success">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="register_success_wrap">
+                <div class="col-9 col-sm-7 col-md-7 col-lg-6">
+                    <div class="card h-100 card_wrap">
+                        <div class="card-title">
+                            <h5 class="card-title">Registro Exitoso!</h5>
+                        </div>
+                        <div class="card-body" id="register_success_text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br class="clearfix">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha512-lteuRD+aUENrZPTXWFRPTBcDDxIGWe5uu0apPEn+3ZKYDwDaEErIK9rvR0QzUGmUQ55KFE2RqGTVoZsKctGMVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/javascript/main.js"></script>
+    <script src="assets/javascript/partner-slide.js"></script>
+    <script>
+        //Display message with success register
+        $( document ).ready(function() {
+            $('#register_success').hide();
+            var success_text = "<?php echo $success?>"
+            if(success_text != ''){
+                console.log(success_text);
+                $('#register_success').toggle();
+                $('#register').hide();
+                $('#register_success_text').text(success_text);
+            }
+        });
+    </script>
+</body>
+</html>
