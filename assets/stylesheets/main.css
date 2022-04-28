@@ -23,10 +23,18 @@ body, h1{
     }
 
     .format_heading2{
-        font-size: 27px;
+        font-size: 30px;
         font-weight: 700;
         letter-spacing: .5px;
         margin-bottom: 10px;
+        line-height: 33px;
+    }
+
+    @media (max-width: 479px){
+        .format_heading2{
+            font-size: 30px;
+            line-height: 30px;
+        }
     }
 
 /*Style headings*/
@@ -124,12 +132,38 @@ body, h1{
     #toggler-button{
         border: 1px solid #CADC31;
         background: #CADC31;
+        border-radius: 15px !important;
+        width: 30px;
+        height: 30px;
+        /* display: flex; */
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        display: none;
     }
 
-    .format_text, #navbar-main{
+    @media (max-width: 900px){ 
+        #toggler-button {
+            display: flex;
+        }
+    }
+
+    #navbar-main{
         font-size: 15px;
         font-weight: 600;
         line-height: 23px;
+    }
+
+    .img-brand{
+        max-width: 78%;
+        height: auto;
+    }
+
+    .navbar-toggler-icon {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 27px !important;
+        padding: 9px;
     }
 
 /* Navbar */
@@ -165,3 +199,16 @@ body, h1{
     }
 
 /* Register */
+
+.format_text{
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+@media (max-width: 479px){
+    .format_text{
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
